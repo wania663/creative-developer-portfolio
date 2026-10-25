@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio — Creative Developer</title>
+<meta name="description" content="Creative frontend developer portfolio: design, code and motion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&family=Mrs+Saint+Delafield&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="wave"><feTurbulence id="turb" type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="3"/><feDisplacementMap id="disp" in="SourceGraphic" scale="0"/></filter></svg>
+
+<div id="loader" aria-hidden="true"><div class="ld-ring"></div><div class="ld-num"><span id="pct">0</span>%</div></div>
+<div id="cur-dot"></div><div id="cur-ring"><span></span></div>
+
+<header class="nav">
+  <a href="#home" class="logo" data-name>Your Name</a>
+  <nav class="links" aria-label="Main">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#journal">Journal</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</header>
+<div class="menu" id="menu"><a href="#work">Work</a><a href="#about">About</a><a href="#journal">Journal</a><a href="#expertise">Expertise</a><a href="#contact">Contact</a></div>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-wrap">
+    <h1 class="hero-title" id="heroTitle">CREATIVE</h1>
+    <div class="hero-sub">DEVELOPER</div>
+    <div class="hero-tags"><span>VISUALS</span><span class="dot"></span><span>CODE</span><span class="dot"></span><span>EXPERIENCE</span></div>
+    <a href="#about" class="scroll" data-hover>SCROLL TO EXPLORE<i></i></a>
+  </div>
+  <div class="copy">©2026 <em data-name>Your Name</em></div>
+  <a href="#contact" class="badge" data-hover aria-label="Let's work together">
+    <svg viewBox="0 0 120 120"><defs><path id="c" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><text><textPath href="#c">LET'S WORK TOGETHER · LET'S WORK TOGETHER ·</textPath></text></svg><b>↗</b>
+  </a>
+  <div class="based">BASED IN PAKISTAN</div>
+</section>
+
+<section id="about" class="dark about">
+  <div class="sec-head reveal"><small>02 <u></u> THE PERSON BEHIND THE WORK</small><h2 class="gold">ABOUT ME</h2>
+    <svg viewBox="0 0 600 30" preserveAspectRatio="none"><path d="M0 4 Q300 40 600 4" fill="none" stroke="#c9b27c" stroke-width="2"/></svg></div>
+  <div class="about-grid">
+    <figure class="photo reveal"><img src="assets/profile.svg" alt="Portrait placeholder"></figure>
+    <div class="about-txt reveal">
+      <small>— WHO AM I ?</small>
+      <h3>I BUILD <span class="gold">DIGITAL WORLDS</span> WHERE <span class="gold">DESIGN</span> MEETS <span class="gold">CODE.</span></h3>
+      <div class="cols"><p>I’m <b class="gold" data-name>Your Name</b> — a creative frontend developer who enjoys turning ideas, interfaces and motion into experiences people remember.</p>
+      <p>I care about the details most people don’t notice: the rhythm of typography, the timing of an interaction and the tiny moments that make a digital product feel alive.</p></div>
+      <dl class="facts"><div><dt>BASED</dt><dd>Pakistan</dd></div><div><dt>FOCUS</dt><dd>Web / Motion</dd></div><div><dt>BUILDING WEBSITES</dt><dd>1+ Year</dd></div><div><dt>MINDSET</dt><dd>Always learning</dd></div><div><dt>PROJECTS DONE</dt><dd>10+</dd></div><div><dt>EDUCATION</dt><dd>Intermediate</dd></div></dl>
+    </div>
+  </div>
+</section>
+
+<section id="expertise" class="dark expertise">
+  <div class="exp-left reveal"><small>03 — EXPERTISE</small><h2><span class="dim">MY</span><br>EXPERTISE</h2>
+    <p>I design and build digital experiences where <b>design, code and motion</b> work as one.</p></div>
+  <ul class="exp-list" id="expList">
+    <li data-chip="GSAP|#88ce02" data-hover><span>01 / DEVELOPMENT</span><h4>Creative Development</h4><p>Fast, responsive and scalable frontends built with modern technologies.</p></li>
+    <li data-chip="MOTION|#8b5cf6" data-hover><span>02 / MOTION</span><h4>Motion &amp; Interaction</h4><p>Scroll-triggered animation and micro-interactions with real meaning.</p></li>
+    <li data-chip="UI/UX|#f5c542" data-hover><span>03 / UI / UX</span><h4>UI / UX Design</h4><p>Clear hierarchy, usability and a distinct visual personality.</p></li>
+    <li data-chip="REACT|#61dafb" data-hover><span>04 / WEB</span><h4>Modern Web Apps</h4><p>Component-driven apps with clean, maintainable architecture.</p></li>
+  </ul>
+  <div class="chip" id="chip"></div>
+</section>
+
+<section id="work" class="dark work">
+  <div class="work-big" aria-hidden="true">WORK</div><h2 class="sr">Work</h2>
+  <div class="marquee"><div><span>UI/UX</span><i>✦</i><span>INTERACTIVE WEB</span><i>✦</i><span>CREATIVE DEVELOPMENT</span><i>✦</i><span>MOTION DESIGN</span><i>✦</i><span>UI/UX</span><i>✦</i><span>INTERACTIVE WEB</span><i>✦</i><span>CREATIVE DEVELOPMENT</span><i>✦</i><span>MOTION DESIGN</span><i>✦</i></div></div>
+  <div class="projects">
+    <a class="proj reveal" href="#" data-hover data-view style="--a:#3b2f1e;--b:#c9b27c"><div class="shot"><b>Creative<br>Portfolio</b></div><span>01 — Web / Motion</span></a>
+    <a class="proj reveal" href="#" data-hover data-view style="--a:#10131c;--b:#6a7aa8"><div class="shot"><b>Luxury<br>Timepieces</b></div><span>02 — E-commerce UI</span></a>
+    <a class="proj reveal" href="#" data-hover data-view style="--a:#2a1030;--b:#e25a8a"><div class="shot"><b>Fashion<br>Store</b></div><span>03 — Landing Page</span></a>
+    <a class="proj reveal" href="#" data-hover data-view style="--a:#0f2a24;--b:#3dd6a6"><div class="shot"><b>Library<br>Manager</b></div><span>04 — Web App</span></a>
+  </div>
+</section>
+
+<section id="journal" class="dark journal">
+  <div class="sec-head reveal"><small>05 <u></u> JOURNAL</small><h2 class="gold">NOTES</h2></div>
+  <ul class="posts">
+    <li class="reveal" data-hover><time>OCT 2026</time><h4>How I built a fluid blob with pure Canvas</h4><i>↗</i></li>
+    <li class="reveal" data-hover><time>SEP 2026</time><h4>Smooth scroll animations without libraries</h4><i>↗</i></li>
+    <li class="reveal" data-hover><time>AUG 2026</time><h4>Typography that moves: lessons learned</h4><i>↗</i></li>
+  </ul>
+</section>
+
+<section id="contact" class="dark contact">
+  <div class="contact-bg" aria-hidden="true">CONTACT</div>
+  <div class="contact-grid">
+    <div class="reveal"><h2>Let’s create <span class="gold">something meaningful.</span></h2>
+      <p>Have a project, an idea or just want to say hi? Send a message, I reply within 24 hours.</p>
+      <ul class="cinfo"><li data-hover><b>Email</b><span id="mailTxt">hello@example.com</span></li><li data-hover><b>Instagram</b><span>@tech.by.itzwania</span></li><li data-hover><b>Location</b><span>Pakistan</span></li></ul></div>
+    <form class="form reveal" id="form" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="msg" rows="4" required></textarea></label>
+      <button class="send" id="send" type="submit" data-hover>Send Message →</button>
+      <p class="note" id="note" role="status"></p>
+    </form>
+  </div>
+  <footer>©2026 <span data-name>Your Name</span> · Built with HTML, CSS &amp; JavaScript</footer>
+</section>
+</main>
+<script src="js/main.js"></script>
+</body></html>
